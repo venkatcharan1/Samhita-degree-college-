@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Samhita Degree College </title>
+  <link rel="stylesheet" href="clgstyle.css">
+  <!-- Boxicons CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#"><img src="https://res.cloudinary.com/dsgdashea/image/upload/c_scale,w_150/v1709791855/29c7ab_179396abade34078adf2c700018fda84_mv2_dlztca.png"></a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name"><img src="https://res.cloudinary.com/dsgdashea/image/upload/c_scale,w_150/v1709791855/29c7ab_179396abade34078adf2c700018fda84_mv2_dlztca.png"></span>
+          <i class='bx bx-x'></i>
+        </div>
+        <ul class="links">
+          <li><a href="index.html">HOME</a></li>
+          <li>
+            <a href="#">ABOUT US</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="about.html">About</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="faculty.html">Faculty</a></li>
+              <li><a href="awards-and-achievements.html">Awards & Achievements</a></li>
+            </ul>
+          </li>
+          <li><a href="apply & enroll.html">Apply & Enroll</a></li>
+           <li><a href="courses.html">Courses</a></li>
+            <li><a href="campus life.html">Campus Life</a></li><!-- Modified line -->
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script >
+   document.addEventListener("DOMContentLoaded", function () {
+  let navLinks = document.querySelector(".nav-links");
+  let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+  let moreArrow = document.querySelector(".more-arrow");
+  let jsArrow = document.querySelector(".js-arrow");
+
+  let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+  let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+
+  if (htmlcssArrow) {
+    htmlcssArrow.onclick = function () {
+      navLinks.classList.toggle("show1");
+    };
+  }
+
+  if (moreArrow) {
+    moreArrow.onclick = function () {
+      navLinks.classList.toggle("show2");
+    };
+  }
+
+  if (jsArrow) {
+    jsArrow.onclick = function () {
+      navLinks.classList.toggle("show3");
+    };
+  }
+
+  if (menuOpenBtn && menuCloseBtn) {
+    menuOpenBtn.onclick = function () {
+      navLinks.style.left = "0";
+    };
+
+    menuCloseBtn.onclick = function () {
+      navLinks.style.left = "-100%";
+    };
+  }
+});
+
+  </script>
+  
+  
+  
+    <section class="home-section">
+    <div class="slider-container">
+      <div class="slide fade">
+        <img src="https://res.cloudinary.com/dsgdashea/image/upload/v1709801628/29c7ab_9a84c6a2d2c2424293732f16b62bbdfa_mv2_bfu5yo.jpg" alt="Slide 1">
+        <div class="text">Admissions are open!</div>
+      </div>
+      <div class="slide fade">
+        <img src="https://res.cloudinary.com/dsgdashea/image/upload/v1709801631/29c7ab_5bd45b110619409aa1a67e17cfe944c8_mv2_eloiyz.jpg" alt="Slide 2">
+        <div class="text">Apply now for exciting opportunities.</div>
+      </div>
+      <!-- Add more slides as needed -->
+  
+      <!-- Navigation arrows -->
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+    
+<script>
+
+  let slideIndex = 0;
+  const slides = document.querySelectorAll('.slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.display = (i === index) ? 'block' : 'none';
+    });
+  }
+
+  function changeSlide(n) {
+    slideIndex += n;
+    if (slideIndex >= slides.length) {
+      slideIndex = 0;
+    } else if (slideIndex < 0) {
+      slideIndex = slides.length - 1;
+    }
+    showSlide(slideIndex);
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    
+    showSlide(slideIndex);
+
+    
+  });
+</script>
+
+<!-- about us -->
+<div class="about">
+  <div class="head-para">
+  <h1>About Us</h1>
+  
+  <div class=abt-img>
+  <img src="https://res.cloudinary.com/dsgdashea/image/upload/v1709805959/WhatsApp_Image_2022-07-22_at_4_21_24_PM_vjifhh.jpg">
+</div>
+
+  <p>Samhitha Educational Institution, approved by Adikavi Nannayya University is a 15-year-old premier organization specialized in UG courses and has been being consistently ranked among the top Degree colleges in coastal districts. In a parent survey conducted recently, Samhitha was considered one of the best educational institutes in this region, with a proven record of achievements and especially with its own spacious infrastructure. In the historical city of Rajahmundry & on the serene bank of the pious Godavari River in the heart of the city, at Taditota Junction, Samhitha is situated proudly serving vast student community.</p></div>
+  
+  
+
+<div class="our-vis">
+<h1>OUR VISION</h1>
+<p>To be an institution of excellence for holistic development creating a supportive, creative & productive learning environment which is
+
+accessible, affordable & innovative and to instill prime human values and thoughtfulness in our students.</p>
+</div>
+
+<div class="our-miss">
+  <h1>OUR MISSION </h1>
+  <p>We are on a mission to impart value-based education to all students coming from various social, economical and cultural backgrounds.</p>
+</div>
+
+</div>
+
+
+
+
+
+<!-- Job Placement Section -->
+<div class="job-placement">
+  <h1 class="main-heading">Job Placement</h1>
+  <p class="sub-heading">100%</p>
+  
+  <h1 class="main-heading">Students Placed Till Now</h1>
+  <p class="sub-heading">6500+</p>
+  
+  <h1 class="main-heading">Companies Visited Till Now</h1>
+  <p class="sub-heading">200+</p>
+</div>
+
+
+
+<!-- Our Courses Section -->
+<div class="courses-section">
+  <h1>Our Courses</h1>
+
+  <!-- Single Course with Round Edges -->
+  <div class="course">
+    <p>B.Sc (M.P.C)</p>
+  </div>
+
+  <div class="course">
+    <p>B.SC (M.E.Cs)</p>
+  </div>
+
+  <div class="course">
+    <p>B.com</p>
+  </div>
+  
+    <div class="course">
+      <p>BCA</p>
+    </div>
+    
+      <div class="course">
+        <p>B.SC (M.P.Cs)</p>
+      </div>
+      
+        <div class="course">
+          <p>B.SC (M.C.Cs)</p>
+        </div>
+        
+          <div class="course">
+            <p>BBA</p>
+          </div>
+          
+            <div class="course">
+              <p>B.SC (MB.BT.BC)</p>
+            </div>
+            
+              <div class="course">
+                <p>B.SC (M.S.Cs)</p>
+              </div>
+              
+                <div class="course">
+                  <p>B.SC ARTIFICIAL INTELLIGENCE</p>
+                </div>
+                
+                  <div class="course">
+                    <p>B.SC DIGITAL MARKETING</p>
+                  </div>
+                  
+                    <div class="course">
+                      <p>B.SC (MB.BT.C)</p>
+                    </div>
+  <!-- Add other courses similarly -->
+
+  <!-- Total Section with Round Edges -->
+  <div class="total-section">
+    <h2>Total Courses: 12</h2>
+  </div>
+</div>
+
+
+<!-- Glimpse of Us Section -->
+<div class="glimpse-section">
+  <h1>Who We Are...</h1>
+
+  <!-- Video Embed -->
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://res.cloudinary.com/dsgdashea/video/upload/v1709819719/Enhance_your_career_with_Samhitha_Degree_College_-100_Placement_guarantee___Rajahmundry_hvkuvv.mp4" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+  <!-- Footer Section -->
+ 
+<footer class="footer-section">
+  <div class="contact-info">
+    <h2>Contact Us</h2>
+    <p>Address: Morampudi Rd, Tadithota, Rajahmundry, Andhra Pradesh, 533101</p>
+    <p>Phone: +91 98666 71777, +91 79935 71777</p>
+    <p>Landline: 0883 2474747</p>
+    <p>Email: samhithadegreecollege@gmail.com</p>
+  </div>
+
+<!-- Social Media Icons Section -->
+  <div class="home-sci">
+    <a href="https://www.instagram.com/samhithacollege/"><i class='bx bxl-instagram'></i></a>
+    
+    <a href="https://www.facebook.com/profile.php/?id=100064182691327"><i class='bx bxl-facebook-square' ></i></a>
+    
+    <a href="https://twitter.com/Samhitha_RJY"><i class='bx bxl-twitter'></i></a>
+    </div>
+    
+  <!-- Google Map Container -->
+  <div class="map-container">
+    <div id="g-mapdisplay">
+
+  
+  <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Samhitha%20Degree%20College,%20Morampudi%20Rd,%20Tadithota,%20Rajamahendravaram,%20Andhra%20Pradesh%20533101+(Samhita%20degree%20college%20)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps devices</a></iframe></div>
+  </div>
+  
+
+  
+</footer>
+<!-- Footer Credit -->
+<div class="map-divider">
+<div class="footer-credit">
+  <p>&copy; 2024 Samhita Degree College. All rights reserved.</p>
+  <p>Designed with VDS by Venkat</p></div>
+</div>
+
+
+  
+</body>
+
+</html>
